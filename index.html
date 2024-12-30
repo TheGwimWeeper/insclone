@@ -3,27 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Login</title>
+    <title>Dewced SMP</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="logo">
-            <form>
-                <input type="text" placeholder="Phone number, username, or email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Log In</button>
-                <div class="divider">
-                    <hr><span>OR</span><hr>
-                </div>
-                <button class="fb-login">Log in with Facebook</button>
-                <a href="#" class="forgot-password">Forgot password?</a>
-            </form>
-        </div>
-        <div class="signup-box">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <button class="menu-toggle">☰</button>
+        <div class="menu-content">
+            <a href="#shop">Shop</a>
+            <a href="#how-to-join">How to Join</a>
+            <a href="#socials">Socials</a>
+            <a href="#reviews">Player Reviews</a>
+            <a href="#contact">Contact Us</a>
         </div>
     </div>
+
+    <!-- Main Page -->
+    <header>
+        <img id="main-image" src="https://via.placeholder.com/1920x400?text=Dewced+SMP+Banner" alt="Dewced SMP Banner">
+    </header>
+
+    <main>
+        <!-- Body Text -->
+        <section>
+            <h1>Welcome to Dewced SMP!</h1>
+            <p>Join the ultimate Minecraft Bedrock server for players who love adventure, community, and creativity. Explore, create, and survive in our custom SMP world.</p>
+        </section>
+
+        <!-- Image Carousel -->
+        <section class="carousel">
+            <div class="carousel-container">
+                <img src="https://via.placeholder.com/400x300?text=Minecraft+1" alt="Minecraft Image 1">
+                <img src="https://via.placeholder.com/400x300?text=Minecraft+2" alt="Minecraft Image 2">
+                <img src="https://via.placeholder.com/400x300?text=Minecraft+3" alt="Minecraft Image 3">
+                <img src="https://via.placeholder.com/400x300?text=Minecraft+4" alt="Minecraft Image 4">
+                <img src="https://via.placeholder.com/400x300?text=Minecraft+5" alt="Minecraft Image 5">
+            </div>
+            <button class="carousel-prev">←</button>
+            <button class="carousel-next">→</button>
+        </section>
+
+        <!-- Player Reviews -->
+        <section id="reviews">
+            <h2>Player Reviews</h2>
+            <div class="review-carousel">
+                <div class="review">
+                    <img src="https://via.placeholder.com/100" alt="Player 1">
+                    <h3>Player1</h3>
+                    <p>"This server is amazing! I've had so much fun playing with friends."</p>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/100" alt="Player 2">
+                    <h3>Player2</h3>
+                    <p>"The custom features on this server are incredible. Highly recommend!"</p>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/100" alt="Player 3">
+                    <h3>Player3</h3>
+                    <p>"The community is so welcoming, and the gameplay is smooth and fun."</p>
+                </div>
+            </div>
+            <button class="review-prev">←</button>
+            <button class="review-next">→</button>
+        </section>
+    </main>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="shop-category">
+            <h3>Ranks</h3>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Rank 1">
+                <p>Rank 1 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Rank 2">
+                <p>Rank 2 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Rank 3">
+                <p>Rank 3 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Rank 4">
+                <p>Rank 4 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Rank 5">
+                <p>Rank 5 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+        <div class="shop-category">
+            <h3>Merchandise</h3>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Merch 1">
+                <p>Merch 1 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Merch 2">
+                <p>Merch 2 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+        <div class="shop-category">
+            <h3>Other</h3>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Other 1">
+                <p>Other 1 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="rank-item">
+                <img src="https://via.placeholder.com/150" alt="Other 2">
+                <p>Other 2 Description</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Join Section -->
+    <section id="how-to-join">
+        <h2>How to Join</h2>
+        <p>Follow this simple tutorial to join Dewced SMP.</p>
+        <button class="tutorial-video">Video Tutorial</button>
+        <a href="https://via.placeholder.com/300" target="_blank">
+            <img src="https://via.placeholder.com/300" alt="Tutorial Image">
+        </a>
+        <p>Step-by-step guide:</p>
+        <div class="tutorial-steps">
+            <p><img src="https://via.placeholder.com/50" alt="Step 1"> Step 1: Download Minecraft Bedrock</p>
+            <p><img src="https://via.placeholder.com/50" alt="Step 2"> Step 2: Join Dewced SMP Server</p>
+            <p><img src="https://via.placeholder.com/50" alt="Step 3"> Step 3: Enjoy the game!</p>
+        </div>
+    </section>
+
+    <!-- Socials -->
+    <section id="socials">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/50?text=YT" alt="YouTube"></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=TikTok" alt="TikTok"></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Discord" alt="Discord"></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Instagram" alt="Instagram"></a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out if you have any questions!</p>
+    </section>
 </body>
-</html>
+    </html>
+    
