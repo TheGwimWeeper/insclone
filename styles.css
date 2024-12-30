@@ -1,122 +1,98 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fafafa;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.container {
-    max-width: 350px;
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: white;
+    width: 50px;
+    height: 100%;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    background: #555;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.menu:hover .menu-content {
+    display: flex;
+}
+
+header img {
     width: 100%;
+    height: auto;
+}
+
+.carousel-container img {
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-prev, .carousel-next {
+    background: #333;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.review-carousel .review {
     text-align: center;
 }
 
-.login-box {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    padding: 40px 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+.review-carousel img {
+    border-radius: 50%;
 }
 
-.logo {
-    width: 150px;
-    margin-bottom: 20px;
+.buy-now {
+    background: #0f7;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #dbdbdb;
-    border-radius: 4px;
-    background-color: #fafafa;
-    font-size: 14px;
+.social-icons a {
+    margin: 10px;
+    display: inline-block;
 }
 
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0095f6;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
+.social-icons img {
+    width: 50px;
+    height: 50px;
 }
 
-form button:hover {
-    background-color: #007bb5;
-}
-
-.divider {
+.tutorial-steps p {
     display: flex;
     align-items: center;
-    margin: 20px 0;
 }
 
-.divider hr {
-    flex: 1;
-    height: 1px;
-    border: none;
-    background-color: #dbdbdb;
-}
-
-.divider span {
-    padding: 0 10px;
-    font-size: 12px;
-    color: #8e8e8e;
-}
-
-.fb-login {
-    background-color: transparent;
-    color: #385185;
-    border: none;
-    font-weight: bold;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.fb-login:hover {
-    text-decoration: underline;
-}
-
-.forgot-password {
-    display: block;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #00376b;
-    text-decoration: none;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-.signup-box {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    padding: 20px 0;
-    border-radius: 8px;
-}
-
-.signup-box p {
-    font-size: 14px;
-    color: #8e8e8e;
-}
-
-.signup-box a {
-    color: #0095f6;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.signup-box a:hover {
-    text-decoration: underline;
+.tutorial-steps img {
+    margin-right: 10px;
 }
